@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>珠峰培训</title>
+    <link rel="icon" href="">
+</head>
+<body>
+<script>
+    var ary = [2,5,7,31,6,3,2,44,31,6,7];
+    Array.prototype.myReverse = function(){
+        var a = [];
+        var j = 0;
+        for(var i=this.length-1;i>=0;i--){
+            a[j]=this[i];
+            j++;
+        }
+        return a;
+    };
+    console.log(ary);
+    var newAry = ary.myReverse();
+    console.log(newAry);
+    var ary3 = [1,2,3,4,5,6,7,8];
+    console.log(ary3);
+    var newAry2 = ary3.myReverse();
+    console.log(newAry2);
+</script>
+</body>
+</html>

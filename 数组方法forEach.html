@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>珠峰培训</title>
+    <link rel="icon" href="">
+</head>
+<body>
+<script>
+    var ary = [1,2,3,4,5,6,7,8];
+    var a = ary.forEach(function (a,b,c){
+        console.log(a);//返还值为数组的每一项；
+        console.log(b);//返还值为每一项的索引；
+        console.log(c);//返还值为原数组；
+    });
+    console.log(a);
+    console.log(ary);
+    Array.prototype.myForEach = (function(a,b,c){
+        for(var i=0;i<this.length;i++){
+            console.log(this[i]);
+            console.log(i);
+            console.log(this);
+        }
+    });
+    var b = ary.myForEach();
+    console.log(b);
+</script>
+</body>
+</html>
